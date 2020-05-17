@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(20, 55, 110);
+    font-family: "Courier", Monaco, monospace;
+    color: black;
+}
+
+.fa {
+    border-radius: 50%;
+    width: 46px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.fa:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-facebook:hover {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin:hover {
+    background: #007bb5;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-instagram:hover {
+    background: #125688;
+}
+
+.fa-reddit {
+    color: white;
+}
+
+.fa-reddit:hover {
+    background: #ff5700;
+}
+
+.nav-link:hover {
+    color: rgb(255, 153, 0) !important;
+}
+
+.introContainer {
+    text-align: center;
+    padding: 20%;
+}
+
+#introText2 {
+    color: rgb(255, 153, 0);
+}
