@@ -1,7 +1,7 @@
 body {
     background-color: rgb(20, 55, 110);
     font-family: "Courier", Monaco, monospace;
-    color: black;
+    color: gainsboro;
 }
 
 .fa {
@@ -49,23 +49,189 @@ body {
     background: #125688;
 }
 
-.fa-reddit {
+.fa-github {
     color: white;
 }
 
-.fa-reddit:hover {
-    background: #ff5700;
+.fa-github:hover {
+    background: rgb(34, 34, 34);
+}
+
+.nav-link {
+    color: gainsboro !important;
 }
 
 .nav-link:hover {
     color: rgb(255, 153, 0) !important;
 }
 
+/*index.html*/
+#carouselFeature {
+    position: relative;
+    width: 800px;
+    top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel1 {
+    width: 100%;
+    height: 650px;
+}
+
+#carousel2 {
+    width: 100%;
+    height: 650px;
+}
+
+#carousel3 {
+    width: 100%;
+    height: 650px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 82vh;
+}
+.carousel-control-prev {
+    position: absolute;
+    top: 82vh;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 82vh;
+}
+
+.carousel-inner {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+
 .introContainer {
+    position: absolute;
+    width: 100%;
+    top: 320px;
     text-align: center;
-    padding: 20%;
 }
 
 #introText2 {
+    color: rgb(255, 153, 0);
+}
+
+/*about.html*/
+#aboutImgContainer {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.rounded-circle {
+    width: 300px;
+    min-width: 250px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutTxtContainer {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#aboutTxtContainer h1 {
+    color: rgb(255, 153, 0);
+}
+
+#aboutTxtContainer ul {
+    list-style-position: inside;
+    padding-right: 5%;
+}
+
+/*experience.html*/
+#expContainer1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#expContainer1 img {
+    width: 250px;
+    height: 200px;
+}
+
+#expDescription1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    position: relative;
+    width: 50%;
+    height: 280px;
+    float: left;
+    text-align: center;
+}
+
+#expContainer2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 50%;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+#expContainer2 img {
+    width: 250px;
+    height: 200px;
+}
+
+#expDescription2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    position: relative;
+    width: 50%;
+    height: 255px;
+    float: left;
+    text-align: center;
+}
+
+#expContainer3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 50%;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+#expContainer3 img {
+    width: 250px;
+    height: 200px;
+}
+
+#expDescription3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    position: relative;
+    width: 50%;
+    height: 255px;
+    float: left;
+    text-align: center;
+}
+
+.jobTitles {
     color: rgb(255, 153, 0);
 }
