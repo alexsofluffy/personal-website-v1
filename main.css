@@ -327,8 +327,7 @@ body {
 .static {
     position:absolute;
     background:white;
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+    filter: grayscale(1);
 }
 
 .static:hover {
