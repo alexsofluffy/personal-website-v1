@@ -118,7 +118,7 @@ if (location.href.split("/").slice(-1) == "projects.html") {
             document.getElementById("projDescription3").style.left = String(pixels2) + "px";
             op4 += 0.01;
             pixels2 -= 1;
-            setTimeout(fadeInRight, 5);
+            setTimeout(fadeInRight, 10);
         }
     }
     setTimeout(fadeInRight, 500);
