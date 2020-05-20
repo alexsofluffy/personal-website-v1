@@ -82,10 +82,88 @@ if (location.href.split("/").slice(-1) == "experience.html") {
             setTimeout(fadeInBot, 10);
         }
     }
-
-
-
-
-
     setTimeout(fadeInBot, 500);
+}
+
+// projects.html
+if (location.href.split("/").slice(-1) == "projects.html") {
+    var op4 = 0.01;
+    var pixels2 = 100;
+    document.getElementById("projContainer1").style.opacity = 0;
+    document.getElementById("projContainer1").style.left = "100px";
+    document.getElementById("projDescription1").style.opacity = 0;
+    document.getElementById("projDescription1").style.left = "100px";
+    document.getElementById("projContainer2").style.opacity = 0;
+    document.getElementById("projContainer2").style.left = "100px";
+    document.getElementById("projDescription2").style.opacity = 0;
+    document.getElementById("projDescription2").style.left = "100px";
+    document.getElementById("projContainer3").style.opacity = 0;
+    document.getElementById("projContainer3").style.left = "100px";
+    document.getElementById("projDescription3").style.opacity = 0;
+    document.getElementById("projDescription3").style.left = "100px";
+
+    function fadeInRight() {
+        if (op4 < 1) {
+            document.getElementById("projContainer1").style.opacity = op4;
+            document.getElementById("projContainer1").style.left = String(pixels2) + "px";
+            document.getElementById("projDescription1").style.opacity = op4;
+            document.getElementById("projDescription1").style.left = String(pixels2) + "px";
+            document.getElementById("projContainer2").style.opacity = op4;
+            document.getElementById("projContainer2").style.left = String(pixels2) + "px";
+            document.getElementById("projDescription2").style.opacity = op4;
+            document.getElementById("projDescription2").style.left = String(pixels2) + "px";
+            document.getElementById("projContainer3").style.opacity = op4;
+            document.getElementById("projContainer3").style.left = String(pixels2) + "px";
+            document.getElementById("projDescription3").style.opacity = op4;
+            document.getElementById("projDescription3").style.left = String(pixels2) + "px";
+            op4 += 0.01;
+            pixels2 -= 1;
+            setTimeout(fadeInRight, 10);
+        }
+    }
+    setTimeout(fadeInRight, 500);
+}
+
+// contact.html
+if (location.href.split("/").slice(-1) == "contact.html") {
+    document.getElementById("emailContainer").style.width = "0px";
+    document.getElementById("emailContainer").style.minWidth = "0px";
+    var boxWidth = 0.4;
+    var boxMinWidth = 4.5;
+
+    function slideOut() {
+        if (boxWidth < 40) {
+            document.getElementById("emailContainer").style.width = String(boxWidth) + "%";
+            document.getElementById("emailContainer").style.minWidth = String(boxMinWidth) + "px";
+            boxWidth += 0.8;
+            boxMinWidth += 9;
+            setTimeout(slideOut, 10);
+        }
+    }
+    setTimeout(slideOut, 50);
+
+
+
+
+
+
+    document.getElementById("contactSubmit").addEventListener("click", submitContact);
+    var req = new XMLHttpRequest();
+
+    function submitContact() {
+        var email = document.getElementById("emailInput").value;
+        var message = document.getElementById("textInput").value;
+        req.open("GET", "http://httpbin.org/get?" + "email=" + email + "&" + "message=" + message);
+        req.addEventListener("load", function() {
+            if (req.status >= 200 && req.status < 400) {
+                var data = JSON.parse(req.responseText);
+                document.getElementById("receivedInfo").textContent = "Message was sent successfully!";
+                console.log(data.args);
+            } else {
+                console.log("Sorry, something went wrong. Please try again.");
+            }
+        })
+        req.send(null);
+        event.preventDefault();
+    }
 }
