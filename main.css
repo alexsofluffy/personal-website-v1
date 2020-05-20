@@ -108,7 +108,7 @@ body {
 .carousel-inner {
     position: absolute;
     width: 100%;
-    height: 650px;
+    height: auto;
 }
 
 .introContainer {
@@ -321,16 +321,6 @@ body {
     float: left;
     text-align: left;
     font-size: small;
-}
-
-.static {
-    position:absolute;
-    background:white;
-    filter: grayscale(1);
-}
-
-.static:hover {
-    opacity: 0;
 }
 
 /*contact.html*/
