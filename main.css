@@ -72,7 +72,7 @@ body {
 /*index.html*/
 #carouselFeature {
     position: relative;
-    width: 80%;
+    width: 100%;
     min-width: 500px;
     top: 75px;
     margin-left: auto;
@@ -124,13 +124,13 @@ body {
 
 /*about.html*/
 #aboutImgContainer {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 100px;
 }
 
 .rounded-circle {
-    width: 300px;
+    width: 20%;
     min-width: 250px;
     height: auto;
     display: block;
@@ -139,12 +139,12 @@ body {
 }
 
 #aboutTxtContainer {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 425px;
+    top: 125px;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #aboutTxtContainer h1 {
@@ -158,7 +158,7 @@ body {
 
 /*experience.html*/
 #expContainer1 {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 25px;
     position: relative;
     width: 50%;
@@ -172,7 +172,7 @@ body {
 }
 
 #expDescription1 {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 25px;
     padding-right: 30px;
     position: relative;
@@ -247,7 +247,7 @@ body {
 }
 
 #projContainer1 {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 25px;
     position: relative;
     width: 50%;
@@ -260,9 +260,9 @@ body {
 }
 
 #projDescription1 {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 25px;
-    padding-right: 30px;
+    padding-right: 50px;
     position: relative;
     width: 50%;
     height: 280px;
@@ -288,7 +288,7 @@ body {
 #projDescription2 {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-right: 30px;
+    padding-right: 50px;
     position: relative;
     width: 50%;
     height: 255px;
@@ -314,7 +314,7 @@ body {
 #projDescription3 {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-right: 30px;
+    padding-right: 50px;
     position: relative;
     width: 50%;
     height: 255px;
