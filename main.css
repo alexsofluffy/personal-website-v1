@@ -8,6 +8,10 @@ body {
     color: #8B8D8E;
 }
 
+.citation {
+    font-size: smaller;
+}
+
 .fa {
     border-radius: 50%;
     width: 46px;
@@ -109,6 +113,7 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 .introContainer {
